@@ -1,0 +1,97 @@
+header {
+  padding-top: 2.5rem;
+}
+
+.header__container {
+  height: 94vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/******************** CTA  ***************************/
+.header__container .cta {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/****************** ME *************************/
+.header__container .me {
+  width: 30%;
+  height: 60%;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  animation: bounce-in-bottom 2.1s both;
+  filter: grayscale(1);
+  transition: var(--transition);
+}
+
+.header__container .me:hover {
+  filter: grayscale(0);
+  box-shadow: var(--color-primary) 0px 7px 29px 0px;
+}
+
+/*********************** Social Links ***************************/
+
+.header__container .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.header__container .social a:hover svg{
+  animation-duration: 5s;
+  animation: jello-horizontal 0.9s both;
+}
+
+
+/***************************** Scroll Down  *************************/
+.header__container .scroll__down {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/************************ Media Queries for Tablets ***************************/
+@media screen and (max-width: 1024px) {
+  .header__container {
+    height: 90vh;
+  }
+
+  .header__container .me {
+    width: 60%;
+    filter: none;
+  }
+}
+
+/************************ Media Queries for mobiles ***************************/
+@media screen and (max-width: 600px) {
+  .header__container {
+    height: 90vh;
+  }
+
+  .header__container .scroll__down {
+    display: none;
+  }
+
+  .header__container .me {
+    width: 60%;
+    height: 50%;
+    filter: none;
+  }
+}

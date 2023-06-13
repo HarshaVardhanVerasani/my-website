@@ -1,0 +1,82 @@
+.container__about {
+  text-align: center;
+}
+
+.container__about .about__skills {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 35% 60%;
+  gap: 5%;
+}
+
+/***************** My photo ****************************/
+.container__about .me {
+  border-radius: 2rem;
+  background: linear-gradient(var(--color-primary), transparent);
+}
+
+.container__about .me img {
+  aspect-ratio: 1/1;
+  transform: rotate(-10deg);
+  border-radius: 2rem;
+  transition: var(--transition);
+}
+
+.container__about .me:hover img {
+  transform: rotate(0);
+}
+
+/* skills section */
+
+.container__about .skills-wrapper h3 {
+  text-align: start;
+}
+
+.container__about .skills-wrapper p {
+  text-align: start;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container__about .skills {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.container__about .skills > .skill {
+  width: 5rem;
+  padding: 0.4rem;
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-bg-variant);
+  transition: var(--transition);
+}
+
+.container__about .skills > .skill:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+/* ************************  Media Queries  (small devices:mobiles)************************** */
+
+@media screen and (max-width: 600px) {
+  .container__about .about__skills {
+    margin-top: 4rem;
+    grid-template-columns: 1fr;
+    grid-template-rows:40% 1fr;
+    gap: 8%;
+  }
+
+  .container__about .skills-wrapper p,
+  .container__about .skills-wrapper h3 {
+    text-align: center;
+  }
+
+  .container__about .skills {
+    justify-content: center;
+  }
+
+}

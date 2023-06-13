@@ -1,0 +1,50 @@
+nav {
+  width: fit-content;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+}
+
+.container__nav {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.152);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5rem;
+  padding: 0 1.5rem;
+}
+
+.container__nav a {
+  margin: 0.5rem 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  background-color: rgba(12, 12, 12, 0.5);
+}
+
+.container__nav .selected {
+  color: var(--color-white);
+  border-bottom: 3px solid var(--color-primary);
+}
+
+
+
+/************************ Media Queries for Tablets ***************************/
+ @media screen and (max-width: 1024px) {
+  nav {
+    bottom: 2.2rem;
+  }
+} 
+
+
+/************************ Media Queries for mobiles ***************************/
+/* @media screen and (max-width: 600px) {
+  nav {
+    width: fit-content;
+  }
+ 
+} */
