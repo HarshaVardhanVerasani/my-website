@@ -21,6 +21,7 @@ const objArr = [
       "Redux ToolKit",
       "Bootstrap",
       "React Icons",
+      "Axios"
     ],
   },
   {

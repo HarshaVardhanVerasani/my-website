@@ -67,7 +67,7 @@ const Contact = () => {
               placeholder="want to say something"
               required
             ></textarea>
-            <p style={{alignSelf:"flex-start", color:"red"}}>
+            <p style={{alignSelf:"flex-start", color:"var(--color-primary)"}}>
               {value && <small>Characters Remaining {LIMIT - value.length}</small>}
             </p>
             <button className="btn btn-primary">Send</button>
