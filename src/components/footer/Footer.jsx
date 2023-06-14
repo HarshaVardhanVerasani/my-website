@@ -14,7 +14,7 @@ const Footer = () => {
         <FaCode/> Harsha Vardhan
         <GiBullseye />
       </p>
-      <ul className="permanent_links">
+      <ul className="permanent_links" type="none">
         <li>
           <a href="#header">Home</a>
         </li>

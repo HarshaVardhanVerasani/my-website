@@ -1,8 +1,18 @@
+import { useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { SiMinutemailer } from "react-icons/si";
 import Reveal from "../framermotion/Reveal";
 import "./contact.css";
 const Contact = () => {
+  const [value, setValue] = useState("");
+  let LIMIT = 100;
+
+  function handleInput(e) {
+    if (e.target.value.length <= LIMIT) {
+      setValue(e.target.value);
+    }
+  }
+
   return (
     <Reveal>
       <section id="contact">
@@ -36,7 +46,11 @@ const Contact = () => {
             </article>
           </div>
           {/* form control */}
-          <form action="https://formspree.io/f/xqkorezr" method="POST" className="form">
+          <form
+            action="https://formspree.io/f/xqkorezr"
+            method="POST"
+            className="form"
+          >
             <input type="text" name="name" placeholder="Full Name" required />
             <input
               type="email"
@@ -44,7 +58,18 @@ const Contact = () => {
               placeholder="Your Email"
               required
             />
-            <textarea name="message" cols="30" rows="10" placeholder="want to say something" required></textarea>
+            <textarea
+              value={value}
+              onInput={handleInput}
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="want to say something"
+              required
+            ></textarea>
+            <p style={{alignSelf:"flex-start", color:"var(--color-primary)"}}>
+              {value && <small>Characters Remaining {LIMIT - value.length}</small>}
+            </p>
             <button className="btn btn-primary">Send</button>
           </form>
         </div>
