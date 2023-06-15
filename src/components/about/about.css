@@ -42,6 +42,7 @@
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container__about .skills > .skill {
@@ -58,15 +59,13 @@
   color: black;
 }
 
-
-
 /* ************************  Media Queries  (small devices:mobiles)************************** */
 
 @media screen and (max-width: 600px) {
   .container__about .about__skills {
     margin-top: 4rem;
     grid-template-columns: 1fr;
-    grid-template-rows:40% 1fr;
+    grid-template-rows: 32% 60%;
     gap: 8%;
   }
 
@@ -76,7 +75,6 @@
   }
 
   .container__about .skills {
-    justify-content: center;
+    justify-content: start;
   }
-
 }
