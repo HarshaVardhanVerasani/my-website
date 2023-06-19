@@ -21,11 +21,14 @@ const About = () => {
             </div>
             <div className="skills-wrapper">
               <p>
-                I'm a web developer with passion for creating intuitive and
-                scalable web application. Worked through 1000+ hours of bootcamp
-                structure, learning Javascript, react. Eager to tackle web
-                development/design challenges to achieve lasting impacts on user
-                experience.
+                Highly motivated and adaptable web developer with a passion for
+                creating engaging user experiences. Proficient in JavaScript,
+                React.js, and Redux.js, with a strong foundation in HTML5 and
+                CSS3. Adept at problem-solving and collaborating in dynamic,
+                fast-paced environments. Committed to delivering high-quality
+                code and achieving lasting impacts on user satisfaction. Eager
+                to tackle web development challenges and contribute to
+                cutting-edge projects.
               </p>
 
               <h3>Skills I Have</h3>
