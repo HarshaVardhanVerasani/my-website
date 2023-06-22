@@ -21,7 +21,7 @@ const objArr = [
       "Redux ToolKit",
       "Bootstrap",
       "React Icons",
-      "Axios"
+      "Axios",
     ],
   },
   {
@@ -49,6 +49,22 @@ const objArr = [
     description:
       "This is Static version of RedStore Website conceptual design of e-commerce",
     techStacks: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "Netflix Clone",
+    image: `${"s"}`,
+    githubLink: "https://github.com/HarshaVardhanVerasani/netflix",
+    liveDemo: "https://netflix-pearl-gamma.vercel.app/",
+    description:
+      "This website consists of everything form authentication and movies and fully responsive design watch trailers of the movies and different category added.",
+    techStacks: [
+      "React",
+      "Redux",
+      "Redux TollKit",
+      "Material UI",
+      "Axios",
+      "React Toastify",
+    ],
   },
 ];
 
