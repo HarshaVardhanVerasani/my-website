@@ -55,7 +55,7 @@ const objArr = [
     title: "Netflix Clone",
     image: `${Netflix}`,
     githubLink: "https://github.com/HarshaVardhanVerasani/netflix",
-    liveDemo: "https://netflix-pearl-gamma.vercel.app/",
+    liveDemo: "https://netflix-dusky-seven.vercel.app/",
     description:
       "This website consists of everything form authentication and movies and fully responsive design watch trailers of the movies and different genres of movies.",
     techStacks: [
