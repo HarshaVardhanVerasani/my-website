@@ -2,6 +2,7 @@ import React from "react";
 import Ecom from "../../assets/e-com.jpg";
 import Games from "../../assets/games.jpg";
 import Reds from "../../assets/redstore.jpg";
+import Netflix from "../../assets/netflix.jpeg";
 import "./portfolio.css";
 
 const objArr = [
@@ -52,11 +53,11 @@ const objArr = [
   },
   {
     title: "Netflix Clone",
-    image: `${"s"}`,
+    image: `${Netflix}`,
     githubLink: "https://github.com/HarshaVardhanVerasani/netflix",
     liveDemo: "https://netflix-pearl-gamma.vercel.app/",
     description:
-      "This website consists of everything form authentication and movies and fully responsive design watch trailers of the movies and different category added.",
+      "This website consists of everything form authentication and movies and fully responsive design watch trailers of the movies and different genres of movies.",
     techStacks: [
       "React",
       "Redux",
