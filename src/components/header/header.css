@@ -30,7 +30,7 @@ header {
   margin: 0 auto;
   animation: bounce-in-bottom 2.1s both;
   filter: grayscale(1);
-  transition: var(--transition);
+  transition: all 1s ease;
 }
 
 .header__container .me:hover {
