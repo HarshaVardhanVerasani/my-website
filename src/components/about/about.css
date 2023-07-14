@@ -65,16 +65,29 @@
   .container__about .about__skills {
     margin-top: 4rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 32% 60%;
-    gap: 8%;
+    grid-template-rows: 30% 70%;
+    gap: 0%;
   }
 
-  .container__about .skills-wrapper p,
+   .container__about .skills-wrapper {
+      margin-top: 2rem;
+   }
+
+  .container__about .skills-wrapper p {
+    text-align: left;
+  }
   .container__about .skills-wrapper h3 {
     text-align: center;
   }
 
   .container__about .skills {
-    justify-content: start;
+    justify-content: center;
+  }
+
+  .container__about .me {
+    width: 80%;
+  }
+  .container__about .about__skills {
+    justify-items: center;
   }
 }
