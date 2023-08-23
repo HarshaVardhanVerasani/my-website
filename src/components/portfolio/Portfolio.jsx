@@ -1,8 +1,10 @@
 import React from "react";
+import Countries from "../../assets/countries.png";
+import Crm from "../../assets/crm.jpg";
 import Ecom from "../../assets/e-com.jpg";
 import Games from "../../assets/games.jpg";
-import Reds from "../../assets/redstore.jpg";
 import Netflix from "../../assets/netflix.jpeg";
+import Reds from "../../assets/redstore.jpg";
 import "./portfolio.css";
 
 const objArr = [
@@ -41,15 +43,25 @@ const objArr = [
       "Chakra UI",
     ],
   },
+
   {
-    title: "Red Store",
-    image: `${Reds}`,
-    githubLink: "https://github.com/HarshaVardhanVerasani/Red-Store-Static",
-    liveDemo:
-      "https://harshavardhanverasani.github.io/Red-Store-Static/E-commerce/src/html/index.html",
+    title: "CRM Application",
+    image: `${Crm}`,
+    githubLink: "https://github.com/HarshaVardhanVerasani/crm_frontend",
+    liveDemo: "https://crm-frontend-delta.vercel.app/",
     description:
-      "This is Static version of RedStore Website conceptual design of e-commerce",
-    techStacks: ["HTML", "CSS", "JavaScript"],
+      "This is an customer relation management website where user rise the complains and engineers will resolve those issues update back in crm app.",
+    techStacks: [
+      "React.js",
+      "Redux",
+      "Redux TollKit",
+      "Bootstrap",
+      "Node.js",
+      "MongoDB",
+      "Axios",
+      "React Toastify",
+      "Material Table",
+    ],
   },
   {
     title: "Netflix Clone",
@@ -66,6 +78,24 @@ const objArr = [
       "Axios",
       "React Toastify",
     ],
+  },
+  {
+    title: "Countries Finding App",
+    image: `${Countries}`,
+    githubLink: "https://github.com/HarshaVardhanVerasani/countries_finder",
+    liveDemo: "https://countries-finder-rho.vercel.app/",
+    description: "This website consists all countries you click on any country get the more information like population and location of the country and their native languages, currency & symbol and region etc...",
+    techStacks: ["React", "Bootstrap", "Axios"],
+  },
+  {
+    title: "Red Store",
+    image: `${Reds}`,
+    githubLink: "https://github.com/HarshaVardhanVerasani/Red-Store-Static",
+    liveDemo:
+      "https://harshavardhanverasani.github.io/Red-Store-Static/E-commerce/src/html/index.html",
+    description:
+      "This is Static version of RedStore Website conceptual design of e-commerce",
+    techStacks: ["HTML", "CSS", "JavaScript"],
   },
 ];
 
