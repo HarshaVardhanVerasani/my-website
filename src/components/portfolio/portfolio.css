@@ -28,6 +28,7 @@
 
 .portfolio__item .description h4 {
   margin-top: 0.5rem;
+  color: var(--color-primary);
 }
 
 .portfolio__item .badge {
@@ -43,7 +44,6 @@
   aspect-ratio: 1/1;
   border-radius: 1.5rem;
   overflow: hidden;
-
 }
 
 .portfolio__item .portfolio_img img {
